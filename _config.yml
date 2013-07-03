@@ -35,6 +35,24 @@ code_dir: downloads/code
 category_dir: blog/categories
 markdown: kramdown
 
+# Jekyll-assets config
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - images
+    - _assets/javascript
+    - _vendor/javascript
+    - _assets/stylesheets
+    - _vendor/stylesheets
+    - _vendor
+  # compress:
+  #   js: uglifier
+  #   css: sass
+  cachebust: hard
+  cache_assets: true
+  gzip: [ text/css, application/javascript ]
+
 # kramdown supports {:toc} and is about as fast as redcarpet
 # http://kramdown.rubyforge.org/converter/html.html#toc
 kramdown:

@@ -44,6 +44,14 @@ task :install, :theme do |t, args|
   mkdir_p public_dir
 end
 
+namespace :assets do
+  # This should be done with "jekyll assets:cleanup" but it doesn't work
+  desc "Cleanup cached assets"
+  task :cleanup do
+    FileUtils.rm_rf '.jekyll-assets-cache'
+  end
+end
+
 #######################
 # Working with Jekyll #
 #######################
