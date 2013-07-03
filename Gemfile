@@ -8,6 +8,7 @@ group :development do
   gem 'RedCloth'
   gem 'haml'
   gem 'sass'
+  gem 'coffee-script'
   gem 'uglifier'
   gem 'rubypants'
   gem 'rb-fsevent'
