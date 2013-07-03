@@ -3,7 +3,6 @@ source "https://rubygems.org"
 group :development do
   gem 'rake'
   gem 'jekyll'
-  gem 'rdiscount'
   gem 'pygments.rb'
   gem 'RedCloth'
   gem 'haml'
@@ -14,6 +13,11 @@ group :development do
   gem 'rb-fsevent'
   gem 'stringex'
   gem 'liquid'
+
+  # Select one and update _config.yml markdown
+  gem 'kramdown'
+  # gem 'rdiscount'
+  # gem 'redcarpet'
 end
 
 gem 'sinatra'

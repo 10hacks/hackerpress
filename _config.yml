@@ -33,12 +33,41 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
+markdown: kramdown
+
+# kramdown supports {:toc} and is about as fast as redcarpet
+# http://kramdown.rubyforge.org/converter/html.html#toc
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false # pygments plugins are used instead
+
+# rdiscount supports {:toc} but is a bit slower than redcarpet
+# http://rdoc.info/github/davidfstr/rdiscount/master/RDiscount
 rdiscount:
+  toc_token: "{:toc}"
   extensions:
     - autolink
     - footnotes
     - smart
+    - generate_toc
+
+# redcarpet is fast but does not support {:toc} without modifying jekyll or using a plugin
+# https://github.com/vmg/redcarpet
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - highlight
+    - autolink
+    - with_toc_data
+    - tables
+    - hard_wrap
+
+
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
