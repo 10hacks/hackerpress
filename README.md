@@ -13,6 +13,13 @@ sense to just switch to Octopress and tweak it for personal preference. The resu
 
 Hackerpress will likely end up as a Octopress theme rather than a fork. But for now, a fork is easier to hack.
 
+## Components
+
+Hackerpress default theme is built with:
+
+* https://github.com/jlong/sass-twitter-bootstrap
+* https://github.com/10hacks/flat-ui-sass
+
 
 ## Documentation
 
