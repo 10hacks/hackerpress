@@ -10,9 +10,10 @@ http_fonts_path = "/fonts"
 css_dir = "public/assets/stylesheets"
 
 # Local development paths
-sass_dir = "source/_assets/stylesheets"
+sass_dir = "source/_assets/app/stylesheets"
 images_dir = "source/images"
 fonts_dir = "source/fonts"
+javascripts_dir = "source/_assets/app/javascript"
 
 line_comments = false
 output_style = :compressed
