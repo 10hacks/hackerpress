@@ -1,12 +1,17 @@
-## What is Octopress?
+## What is Hackerpress?
 
-Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
+Hackerpress is [Octopress](https://github.com/imathis/octopress) with a default theme based on [Twitter Bootstrap](http://twitter.github.io/bootstrap/) and some aesthetic tweaks to configuration and directory structure.
 
-1. **Octopress sports a clean responsive theme** written in semantic HTML5, focused on readability and friendliness toward mobile devices.
-2. **Code blogging is easy and beautiful.** Embed code (with [Solarized](http://ethanschoonover.com/solarized) styling) in your posts from gists, jsFiddle or from your filesystem.
-3. **Third party integration is simple** with built-in support for Pinboard, Delicious, GitHub Repositories, Disqus Comments and Google Analytics.
-4. **It's easy to use.** A collection of rake tasks simplifies development and makes deploying a cinch.
-5. **Ships with great plug-ins** some original and others from the Jekyll community &mdash; tested and improved.
+**Why Hackerpress vs Octopress or Jekyll?**
+
+We created Hackerpress to use for our own static and blog sites hosted on [Github](https://github.com/10hacks). 
+Initially, we started with Jekyll but wanted to use SASS and CoffeeScript. Using sass directly from the command line
+worked fine for stylesheets but we needed the same compiling and syntax power for javascript.
+The [jekyll-assets](https://github.com/ixti/jekyll-assets) plugin did the trick, but Github doesn't support
+plugins. The only option is to precompile everything before deploying to Github. At this point, it made more 
+sense to just switch to Octopress and tweak it for personal preference. The result was Hackerpress.
+
+Hackerpress will likely end up as a Octopress theme rather than a fork. But for now, a fork is easier to hack.
 
 
 ## Documentation
@@ -16,14 +21,15 @@ Check out [Octopress.org](http://octopress.org/docs) for guides and documentatio
 
 ## Contributing
 
-[![Build Status](https://travis-ci.org/imathis/octopress.png?branch=master)](https://travis-ci.org/imathis/octopress)
+[![Build Status](https://travis-ci.org/10hacks/hackerpress.png?branch=master)](https://travis-ci.org/10hacks/hackerpress)
 
-We love to see people contributing to Octopress, whether it's a bug report, feature suggestion or a pull request. At the moment, we try to keep the core slick and lean, focusing on basic blogging needs, so some of your suggestions might not find their way into Octopress. For those ideas, we started a [list of 3rd party plug-ins](https://github.com/imathis/octopress/wiki/3rd-party-plugins), where you can link your own Octopress plug-in repositories. For the future, we're thinking about ways to easier add them them into our main releases.
+Plugins and other enhancements should be submitted to [Octopress](https://github.com/imathis/octopress).
 
 
 ## License
 (The MIT License)
 
+Copyright © 2013 Joe Johnston
 Copyright © 2009-2013 Brandon Mathis
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ‘Software’), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -31,8 +37,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-#### If you want to be awesome.
-- Proudly display the 'Powered by Octopress' credit in the footer.
-- Add your site to the Wiki so we can watch the community grow.
