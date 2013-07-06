@@ -20,6 +20,10 @@ Hackerpress default theme is built with:
 * https://github.com/jlong/sass-twitter-bootstrap
 * https://github.com/10hacks/flat-ui-sass
 
+## Customizing Hackerpress Theme
+
+See plugins/assets.rb for including compass or bourbon goodies.
+
 
 ## Documentation
 
