@@ -4,7 +4,7 @@ Hackerpress is [Octopress](https://github.com/imathis/octopress) with a default 
 
 **Why Hackerpress vs Octopress or Jekyll?**
 
-I created Hackerpress to use for my own static sites and [blogs](https://www.simple10.com). 
+I created Hackerpress to use for my own static sites and [blogs](http://www.simple10.com). 
 Initially, I started with Jekyll but wanted to use SASS and CoffeeScript. Using sass directly from the command line
 worked fine for stylesheets but I needed the same compiling and syntax power for javascript.
 The [jekyll-assets](https://github.com/ixti/jekyll-assets) plugin did the trick, but Github doesn't support
