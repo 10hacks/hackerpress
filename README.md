@@ -4,9 +4,9 @@ Hackerpress is [Octopress](https://github.com/imathis/octopress) with a default 
 
 **Why Hackerpress vs Octopress or Jekyll?**
 
-We created Hackerpress to use for our own static and blog sites hosted on [Github](https://github.com/10hacks). 
-Initially, we started with Jekyll but wanted to use SASS and CoffeeScript. Using sass directly from the command line
-worked fine for stylesheets but we needed the same compiling and syntax power for javascript.
+I created Hackerpress to use for my own static sites and [blogs](https://www.simple10.com). 
+Initially, I started with Jekyll but wanted to use SASS and CoffeeScript. Using sass directly from the command line
+worked fine for stylesheets but I needed the same compiling and syntax power for javascript.
 The [jekyll-assets](https://github.com/ixti/jekyll-assets) plugin did the trick, but Github doesn't support
 plugins. The only option is to precompile everything before deploying to Github. At this point, it made more 
 sense to just switch to Octopress and tweak it for personal preference. The result was Hackerpress.
@@ -18,7 +18,7 @@ Hackerpress will likely end up as a Octopress theme rather than a fork. But for 
 Hackerpress default theme is built with:
 
 * https://github.com/jlong/sass-twitter-bootstrap
-* https://github.com/10hacks/flat-ui-sass
+* https://github.com/simple10/flat-ui-sass
 
 ## Customizing Hackerpress Theme
 
@@ -32,7 +32,7 @@ Check out [Octopress.org](http://octopress.org/docs) for guides and documentatio
 
 ## Contributing
 
-[![Build Status](https://travis-ci.org/10hacks/hackerpress.png?branch=master)](https://travis-ci.org/10hacks/hackerpress)
+[![Build Status](https://travis-ci.org/simple10/hackerpress.png?branch=master)](https://travis-ci.org/simple10/hackerpress)
 
 Plugins and other enhancements should be submitted to [Octopress](https://github.com/imathis/octopress).
 
